@@ -1,0 +1,312 @@
+/*	
+	Side Navigation Menu V2, RWD
+	===================
+	License:
+	https://goo.gl/EaUPrt
+	===================
+	Author: @PableraShow
+
+ */
+
+ @charset "UTF-8";
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+ * {
+   box-sizing: border-box;
+ }
+ button {
+   float: right;
+   margin: 5px;
+   border-radius: 3px;
+   font-size: 14.5px;
+   font-family: 'Open Sans', sans-serif;
+   margin-right: 0px;
+   font-weight: 500;
+   background-color: #FFF842;
+   border: transparent;
+   padding: 0.5em;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+ .img-preview {
+  width: 85%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 7px 7px 10px #000000;
+  margin: 5px;
+
+  -webkit-animation-name: animateop;
+    -webkit-animation-duration: 0.8s;
+    animation-name: animateop;
+    animation-duration: 0.8s
+}
+
+.img-nav {
+  list-style: none;
+  padding: 1px;
+  margin: auto;
+}
+
+.btnImgNav {
+  display: inline;
+  float: none !important;
+  color: black;
+}
+
+.btnImgNav:hover {
+  background-color: #403E10;
+}
+
+ .formBtn, .downloadBtn, .cancelBtn, .btnImgNav {
+  float: right;
+   margin: 5px;
+   border-radius: 3px;
+   font-size: 20.5px;
+   font-family: 'Open Sans', sans-serif;
+   margin-right: 0px;
+   font-weight: 500;
+   background-color: #FFF842;
+   border: transparent;
+   padding: 0.5em;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+ .formInputs {
+  /*width: 95%;
+  padding: 10px;*/
+
+
+  padding: 0px 15px;
+  margin: 0px !important;
+  height: 2.5em;
+  width: 100%;
+
+  border-radius: 3px;
+  font-size: 1em;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(70, 78, 97);
+  border: transparent;
+  color: white;
+ }
+
+ .input-wrap:not(:last-child) {
+    margin-bottom: 15px;
+ }
+
+ #img-wrap {
+  padding-top: 0.5em;
+ }
+
+ .formInputs::placeholder {
+   color: rgb(170, 170, 170);
+ }
+
+ #formP {
+   font-size: 1.5em;
+   color: white;
+ }
+ #form1, #form2 {
+   display: block;
+ }
+
+ select {
+   font-size: 15px;
+   border-radius: 3px;
+ }
+ label {
+  color: white;
+ }
+
+ #imgBody {
+   text-align: center;
+ }
+
+ .modal {
+    display: none; /* auto by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable auto if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+
+ .modal-content {
+   position: relative;
+    background-color: #1F2739;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 5px;
+    max-width: 55%;
+    max-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    overflow: auto;
+ }
+
+ .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-header, .modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(15, 21, 36);
+  color: white;
+  overflow: auto;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  overflow: auto;
+}
+
+ #bancodeos_info {
+  color: white;
+ }
+
+ #bancodeos_paginate {
+   color: white; 
+ }
+ body {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   line-height: 1.42em;
+   color:#A7A1AE;
+   background-color:#1F2739;
+   padding: 0.2em;
+ }
+ 
+ h1 {
+   font-size:3em; 
+   font-weight: 300;
+   line-height:1em;
+   text-align: center;
+   color: #4DC3FA;
+ }
+ 
+ h2 {
+   font-size:1em; 
+   font-weight: 300;
+   text-align: center;
+   display: block;
+   line-height:1em;
+   padding-bottom: 2em;
+   color: #FB667A;
+ }
+ 
+ h2 a {
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #FB667A;
+   text-decoration: none;
+ }
+ 
+ .blue { color: #185875; }
+ .yellow { color: #FFF842; }
+ 
+ .container th h1 {
+       font-weight: bold;
+       font-size: 1em;
+   text-align: left;
+   color: #185875;
+ }
+ 
+ .container td {
+       font-weight: normal;
+       font-size: 1em;
+   -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+        -moz-box-shadow: 0 2px 2px -2px #0E1119;
+             box-shadow: 0 2px 2px -2px #0E1119;
+ }
+ 
+ .container {
+       text-align: left;
+       overflow: auto;
+       width: 80%;
+       margin: 0 auto;
+   display: table;
+   padding: 0 0 8em 0;
+ }
+ 
+ .container td, .container th {
+       padding-bottom: 2%;
+       padding-top: 2%;
+   padding-left:2%;  
+ }
+ 
+ /* Background-color of the odd rows */
+ .container tr:nth-child(odd) {
+       background-color: #323C50;
+ }
+ 
+ /* Background-color of the even rows */
+ .container tr:nth-child(even) {
+       background-color: #2C3446;
+ }
+ 
+ .container th {
+       background-color: #1F2739;
+ }
+ 
+ .container td:first-child { color: #FB667A; }
+ 
+ .container tr:hover {
+    background-color: #464A52;
+ -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+        -moz-box-shadow: 0 6px 6px -6px #0E1119;
+             box-shadow: 0 6px 6px -6px #0E1119;
+ }
+ 
+ .container td:hover {
+   background-color: #FFF842;
+   color: #403E10;
+   font-weight: bold;
+   
+   box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+   transform: translate3d(6px, -6px, 0);
+   
+   transition-delay: 0s;
+       transition-duration: 0.4s;
+       transition-property: all;
+   transition-timing-function: line;
+ }
+
+
+ @-webkit-keyframes animateop {
+  from {opacity:0} 
+  to {opacity:1}
+}
+
+ @keyframes animateop {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+ 
+ @media (max-width: 800px) {
+ .container td:nth-child(4),
+ .container th:nth-child(4) { display: none; }
+ }
+
+ @-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+ @keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
